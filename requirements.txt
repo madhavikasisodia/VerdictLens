@@ -1,0 +1,2 @@
+# VerdictLens backend dependencies will be added as components are implemented.
+# Keep this file intentionally empty for the initial repository scaffold.
