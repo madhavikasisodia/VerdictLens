@@ -27,6 +27,8 @@ ENV/
 !.env.example
 
 # Generated data and model artifacts
+data/
+checkpoints/
 data/raw/*
 data/processed/*
 !data/raw/.gitkeep

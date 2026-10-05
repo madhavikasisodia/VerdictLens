@@ -1,0 +1,13 @@
+seed: 42
+
+paths:
+  data_root: data
+  raw_data: data/raw
+  processed_data: data/processed
+  samples: data/samples
+  checkpoints: checkpoints
+  evaluation: evaluation
+
+models:
+  led: allenai/led-base-16384
+  pegasus: google/pegasus-cnn_dailymail

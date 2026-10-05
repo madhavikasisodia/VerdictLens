@@ -1,1 +1,0 @@
-"""VerdictLens backend application package."""
