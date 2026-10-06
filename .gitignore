@@ -40,6 +40,10 @@ data/processed/*
 *.safetensors
 models/checkpoints/
 
+# Generated dataset reports
+experiments/eda/
+experiments/iltur_debug.md
+
 # Jupyter
 .ipynb_checkpoints/
 

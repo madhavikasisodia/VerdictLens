@@ -1,5 +1,11 @@
 seed: 42
 
+splits:
+  seed: 42
+  train: 0.8
+  val: 0.1
+  test: 0.1
+
 paths:
   data_root: data
   raw_data: data/raw
@@ -7,6 +13,29 @@ paths:
   samples: data/samples
   checkpoints: checkpoints
   evaluation: evaluation
+  eda_output: experiments/eda
+
+dataset:
+  source: huggingface
+  name: percins/IN-ABS
+  split: null
+  raw_dir: data/raw
+  file_patterns:
+    - "*.csv"
+    - "*.json"
+    - "*.jsonl"
+    - "*.parquet"
+  schema:
+    doc_id: file
+    text: text
+    summary: summary
+    year: null
+    court: null
+
+iltur:
+  name: Exploration-Lab/IL-TUR
+  config: cjpe
+  revision: script
 
 models:
   led: allenai/led-base-16384
