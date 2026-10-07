@@ -1,14 +1,22 @@
-transformers
-datasets
-huggingface_hub
-torch
-nltk
-spacy
-networkx
-rouge-score
-bert-score
-scikit-learn
-pyyaml
-pytest
-pandas
-tqdm
+# Core runtime
+PyYAML>=6.0
+kagglehub>=0.3
+pandas>=2.0
+pyarrow>=14.0
+pypdf>=5.0
+pysbd>=0.3.4
+spacy>=3.7
+sentence-transformers>=2.7
+
+# Development and tests
+pytest>=8.0
+
+# Optional integrations (install when needed)
+torch>=2.1
+transformers>=4.40
+datasets>=2.18
+langgraph>=0.2
+ollama>=0.4
+# evaluate>=0.4
+# rouge-score>=0.1.2
+# bert-score>=0.3.13

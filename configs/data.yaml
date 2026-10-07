@@ -1,0 +1,15 @@
+dataset_slugs:
+  - indian_supreme_court_judgments
+seed: 42
+splits:
+  train: 0.8
+  dev: 0.1
+  test: 0.1
+columns:
+  text: null
+  id: null
+  summary: null
+word_limits:
+  min: 40
+  max: 180
+  extractive_sentences: 5

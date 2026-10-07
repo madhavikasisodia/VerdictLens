@@ -1,63 +1,53 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.Python
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-*.egg-info/
-build/
-dist/
-.coverage
-htmlcov/
-coverage/
-*.log
-
-# Virtual environments
+# Python environments and caches
 .venv/
 venv/
 env/
-ENV/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
-# Environment and secrets
+# IDE and local tooling
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
 .env
 .env.*
 !.env.example
 
-# Generated data and model artifacts
-data/
-checkpoints/
-data/raw/*
-data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-!data/samples/.gitkeep
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+
+# Raw and derived datasets are local-only
+data/raw/**
+!data/raw/**/
+data/splits/**
+!data/splits/**/
+
+# Model downloads, checkpoints, and generated artifacts
+outputs/**
+!outputs/**/
+*.safetensors
 *.ckpt
 *.pt
 *.pth
-*.safetensors
-models/checkpoints/
+*.bin
 
-# Generated dataset reports
-experiments/eda/
-experiments/iltur_debug.md
+# Local reports and experiment metadata
+wandb/
+mlruns/
+.tensorboard/
 
-# Jupyter
-.ipynb_checkpoints/
-
-# Node / Next.js (for the future frontend)
-node_modules/
-.next/
-out/
-.npm/
-*.tsbuildinfo
-
-# IDE and operating system
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-.idea/
-.DS_Store
-Thumbs.db
+# Empty-directory placeholders are not project content
+*.gitkeep
